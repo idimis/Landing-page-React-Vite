@@ -1,0 +1,27 @@
+/* Testimonials/styles.css */
+
+.testimonials-section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.testimonial-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    margin-left: 15px;
+}
+
+.testimonial-name {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.testimonial-position {
+    font-size: 14px;
+    color: #666;
+}

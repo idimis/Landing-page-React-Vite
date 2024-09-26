@@ -1,0 +1,58 @@
+/* ContactUs/styles.css */
+
+.contact-page {
+    display: flex;
+    padding: 40px 0;
+}
+
+.contact-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info span {
+    color: #666;
+}
+
+.form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-item {
+    margin-bottom: 15px;
+}
+
+.separator {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}

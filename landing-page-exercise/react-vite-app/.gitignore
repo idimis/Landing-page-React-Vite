@@ -1,0 +1,106 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+ ../.BigNox/
+        ../.Ld9VirtualBox/
+        ../.android/
+        ../.bash_history
+        ../.condarc
+        ../.continuum/
+        ../.docker/
+        ../.gitconfig
+        ../.gitignore
+        ../.gnupg/
+        ../.gradle/
+        ../.ipynb_checkpoints/
+        ../.ipython/
+        ../.jdks/
+        ../.jupyter/
+        ../.lesshst
+        ../.m2/
+        ../.matplotlib/
+        ../.node_repl_history
+        ../.pgedb/
+        ../.ssh/
+        ../.tonlinetheme
+        ../.viminfo
+        ../.vscode/
+        ../3D Objects/
+        ../AppData/
+        ../CSS
+        ../ChartNexus/
+        ../Contacts/
+        ../Desktop/
+        ../Documents/
+        ../Downloads/
+        ../Favorites/
+        ../Front-end exercise.java
+        ../IdeaProjects/
+        ../Landing page React Vite/
+        ../Links/
+        ../MicrosoftEdgeBackups/
+        ../Music/
+        ../NTUSER.DAT
+        ../NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+        ../NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+        ../NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+        ../Nox_share/
+        ../OneDrive/
+        ../PakistanCommerce.csv
+        ../Pictures/
+        ../Saved Games/
+        ../Searches/
+        ../Untitled.ipynb
+        ../Untitled1.ipynb
+        ../Untitled2.ipynb
+        ../Untitled3.ipynb
+        ../Untitled4.ipynb
+        ../Untitled5.ipynb
+        ../Untitled6.ipynb
+        ../Videos/
+        ../anaconda3/
+        ../audience_list.csv
+        ../d4ac4633ebd6440fa397b84f1bc94a3c.7z
+        ../file.lock
+        ../front-end/
+        ../git
+        ../inittk.ini
+        ../inst.ini
+        ./
+        ../latihan exer  2.ipynb
+        ../latihan exer 2.ipynb
+        ../my-app/
+        ../ntuser.dat.LOG1
+        ../ntuser.dat.LOG2
+        ../ntuser.ini
+        ../nuuid.ini
+        ../order_detail (2).txt
+        ../package-lock.json
+        ../package.json
+        ../portfolio.html
+        ../react-demo/
+        ../server_config.toml
+        ../useruid.ini
+        ../vmlogs/

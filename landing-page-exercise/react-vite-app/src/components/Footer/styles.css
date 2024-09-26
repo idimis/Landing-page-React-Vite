@@ -1,0 +1,28 @@
+/* Footer/styles.css */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-title {
+    font-size: 18px;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-icon {
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}

@@ -1,0 +1,24 @@
+/* Header/styles.css */
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: #007bff;
+}
