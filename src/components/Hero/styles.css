@@ -1,0 +1,38 @@
+/* Hero/styles.css */
+
+.hero {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/Ayushphoto.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.rectangle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.running-text {
+    animation: scroll 10s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
