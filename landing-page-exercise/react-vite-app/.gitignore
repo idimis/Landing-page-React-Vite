@@ -1,29 +1,23 @@
+# Node.js modules
+node_modules/
+
+# Build output
+dist/
+
 # Logs
-logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Environment variables
+.env
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Mac system files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
 
- ../.BigNox/
+# IDE files
+.vscode/
+
+../-1.14-windows.xml
+        ../.BigNox/
         ../.Ld9VirtualBox/
         ../.android/
         ../.bash_history
@@ -88,7 +82,6 @@ dist-ssr
         ../git
         ../inittk.ini
         ../inst.ini
-        ./
         ../latihan exer  2.ipynb
         ../latihan exer 2.ipynb
         ../my-app/
