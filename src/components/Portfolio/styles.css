@@ -1,69 +1,112 @@
 /* Portfolio/styles.css */
 
 .portfolio-section {
-    max-width: 1200px;         /* Set maximum width */
-    margin: 0 auto;            /* Center the section */
-    margin-top: 30px;          /* Space above the section */
-    margin-bottom: 30px;       /* Space below the section */
-    margin-left: 50px;            /* Left margin for spacing */
-    margin-right: 400px;        /* Right margin */
-    display: flex;             /* Use flexbox for section layout */
+    max-width: 1200px;         
+    margin: 0 auto;            
+    margin-top: 30px;          
+    margin-bottom: 30px;       
+    margin-left: 50px;         
+    margin-right: 400px;       
+    display: flex;             
 }
 
 .portfolio-header {
-    flex-basis: 100%;           /* Adjust width for title */
+    flex-basis: 100%;           
     padding-left: 5px;
 }
 
 .portfolio-title {
-    font-family: 'Neue Montreal'; /* Match font family */
-    font-size: 40px;           /* Portfolio title font size */
+    font-family: 'Neue Montreal'; 
+    font-size: 40px;           
     font-weight: 500;  
     margin-left: 0;
-    color: #0B0C0E;            /* Title color */
+    color: #0B0C0E;            
     text-align: left;
 }
 
 .work-list {
-    flex-basis: 70%;           /* Adjust width for works */
-    display: flex;             /* Use flexbox for work list layout */
-    flex-direction: column;    /* Stack works vertically */
+    flex-basis: 70%;           
+    display: flex;             
+    flex-direction: column;    
 }
 
 .portfolio-item {
-    display: flex;             /* Use flexbox for item layout */
-    justify-content: space-between; /* Space between title and details */
-    align-items: center;       /* Center items vertically */
-    margin-bottom: 20px;       /* Space between items */
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;       
+    margin-bottom: 20px;       
 }
 
-.portfolio-description {
-    flex: 1;                   /* Allow description to take remaining space */
+.portfolio-info {
+    flex: 1;                   /* Allow info to take remaining space */
+    display: flex;             /* Use flexbox for info layout */
+    flex-direction: column;    /* Stack title and description */
+    margin-right:30px;
 }
 
 .company-name {
-    font-family: 'Neue Montreal'; /* Match font family */
-    font-size: 60px;           /* Company name font size */
-    font-weight: 500;          /* Company name font weight */
-    color: #0B0C0E;            /* Company name color */
-    margin: 0;                 /* Reset margin */
+    font-family: 'Neue Montreal'; 
+    font-size: 60px;           
+    font-weight: 500;          
+    color: #0B0C0E;            
+    margin: 0;                 
 }
 
 .work-description {
-    font-family: 'Neue Montreal'; /* Match font family */
-    font-size: 24px;           /* Description font size */
-    font-weight: 400;          /* Description font weight */
-    line-height: 140%;         /* Line height for readability */
-    color: #3C3D3E;            /* Description color */
-    margin-top: 5px;           /* Space between company and description */
+    font-family: 'Neue Montreal'; 
+    font-size: 24px;           
+    font-weight: 400;          
+    line-height: 140%;         
+    color: #3C3D3E;            
+    margin-top: 5px;           
+}
+
+.arrow-button-container {
+    display: flex;                /* Center the arrow */
+    justify-content: flex-end;    /* Align right */
+    margin-left: auto;            /* Push arrow button to the right */
 }
 
 .round-button {
-    border: none;              /* No border for button */
+    width: 32px;                  /* Width of the button */
+    height: 32px;                 /* Height of the button */
+    border: 2px solid black;      /* Outline */
+    border-radius: 50%;           /* Make it circular */
+    display: flex;                /* Center the arrow */
+    align-items: center;          /* Center vertically */
+    justify-content: center;      /* Center horizontally */
     background-color: transparent; /* Transparent background */
-    cursor: pointer;           /* Pointer cursor on hover */
+    cursor: pointer;              /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
-.round-button:focus {
-    outline: none;             /* No outline when focused */
+.arrow {
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent; /* Left triangle */
+    border-right: 8px solid transparent; /* Right triangle */
+    border-bottom: 16px solid black;     /* Bottom triangle for arrow */
+    transform: rotate(45deg);            /* Rotate to point right */
+    transition: border-bottom-color 0.3s; /* Transition for color change */
+}
+
+.round-button:hover {
+    background-color: black;          /* Change background on hover */
+}
+
+.round-button:hover .arrow {
+    border-bottom-color: white;       /* Change arrow color on hover */
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+    .portfolio-title {
+        font-size: 32px; /* Adjust title size for mobile */
+    }
+    .company-name {
+        font-size: 40px; /* Adjust company name size for mobile */
+    }
+    .work-description {
+        font-size: 20px; /* Adjust description size for mobile */
+    }
 }

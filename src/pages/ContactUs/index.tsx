@@ -1,9 +1,10 @@
-// contactus index.tsx
+
 import { FC } from "react";
 import Header from '../../components/Header';
 import './styles.css';
 
-const ContactUs: FC = () => { // Ensure the name matches your import in app.tsx
+const Index: FC = () => { // Ensure the name matches your import in app.tsx
+  console.log("ContactUs component rendered");
   return (
     <div className="contact-us">
       <Header />
@@ -41,4 +42,4 @@ const ContactUs: FC = () => { // Ensure the name matches your import in app.tsx
   );
 };
 
-export default ContactUs; // Ensure the export name matches the import in app.tsx
+export default Index;

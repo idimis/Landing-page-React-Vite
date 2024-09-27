@@ -7,7 +7,8 @@ import Portfolio from '../../components/Portfolio';
 import Footer from '../../components/Footer';
 import About from '../../components/About';
 import Testimonials from '../../components/Testimonials';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom'; 
+
 import './styles.css';
 
 const LandingPage = () => {

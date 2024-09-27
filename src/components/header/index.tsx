@@ -1,8 +1,6 @@
 import { FC } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import './styles.css';
-
-
-
 
 const Index: FC = () => {
   return (
@@ -12,14 +10,13 @@ const Index: FC = () => {
           @Adimas Barnwal
         </div>
         <div className="nav-list">
-          <a href="/public">About</a>
+          <Link to="/about">About</Link> {/* Use Link for navigation */}
           <a href="#work">Work</a>
-          <a href="/contact-us">Contact</a>
+          <Link to="/contact-us">Contact</Link> {/* Update this to Link */}
         </div>
       </nav>
     </header>
   );
-}
-
+};
 
 export default Index;

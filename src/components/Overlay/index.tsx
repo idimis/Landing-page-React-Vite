@@ -1,5 +1,5 @@
-import { FC, useState } from "react";
-import Slideout from "../Slideout"; // Import the SlideOutMenu component
+import { FC, useState, useEffect } from "react";
+import Slideout from "../Slideout";
 import './styles.css';
 
 const Overlay: FC = () => {
@@ -9,12 +9,23 @@ const Overlay: FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add("dark-overlay");
+    } else {
+      document.body.classList.remove("dark-overlay");
+    }
+  }, [isMenuOpen]);
+
   return (
-    <div className="overlay-menu" onMouseEnter={toggleMenu} onMouseLeave={toggleMenu}>
-      <span>👋</span>
-      <span>Hi I’m Adimas</span>
-      {isMenuOpen && <Slideout />} {/* Show the slide-out menu when hovering */}
-    </div>
+    <>
+      <div className="overlay-menu" onMouseEnter={toggleMenu} onMouseLeave={toggleMenu}>
+        <span>👋</span>
+        <span>Hi I’m Adimas</span>
+      </div>
+      {isMenuOpen && <div className="menu-overlay open" onClick={toggleMenu}></div>} {/* Dark overlay */}
+      <Slideout isOpen={isMenuOpen} closeMenu={toggleMenu} />
+    </>
   );
 };
 

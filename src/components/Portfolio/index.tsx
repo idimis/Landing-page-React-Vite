@@ -17,11 +17,15 @@ const Portfolio = () => {
       <div className="work-list">
         {works.map((work, index) => (
           <div className="portfolio-item" key={index}>
-            <div className="portfolio-description">
+            <div className="portfolio-info">
               <h3 className="company-name">{work.company}</h3>
               <p className="work-description">{work.description}</p>
             </div>
-            <button className="round-button">➡️</button>
+            <div className="arrow-button-container">
+              <button className="round-button">
+                <div className="arrow"></div>
+              </button>
+            </div>
           </div>
         ))}
       </div>

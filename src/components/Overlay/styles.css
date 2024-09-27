@@ -1,26 +1,26 @@
 .overlay-menu {
     position: absolute;
-    top: 20px; /* Adjust this value as needed */
-    right: 20px; /* Adjust this value as needed */
+    top: 70px; /* Sesuaikan ini untuk lebih dekat dengan navbar "Contact" */
+    right: 30px; /* Sesuaikan ini untuk menempatkan di sebelah kanan, dekat dengan "Contact" */
     color: white;
     display: flex;
-    gap: 12px; /* Adjusted gap */
+    gap: 12px; /* Jarak antar elemen */
     justify-content: center;
     align-items: center;
     background-color: black;
-    padding: 10px 16px; /* Adjusted padding */
-    border-radius: 50px; /* Make it more rounded */
+    padding: 20px 32px; /* Perbesar padding */
+    border-radius: 50px; /* Tetap membuatnya lebih bulat */
     transition: transform 0.3s ease;
 }
 
 .overlay-menu:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.1); /* Sedikit membesar saat di-hover */
 }
 
 .overlay-menu:nth-child(1) {
-    font-size: 56px;
+    font-size: 112px; /* 2x lipat dari ukuran awal */
 }
 
 .overlay-menu:nth-child(2) {
-    font-size: 40px;
+    font-size: 80px; /* 2x lipat dari ukuran awal */
 }
