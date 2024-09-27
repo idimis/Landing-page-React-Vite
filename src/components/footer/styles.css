@@ -1,28 +1,80 @@
 /* Footer/styles.css */
 
 .footer {
-    background-color: #333;
+    background-color: #000; /* Ubah warna latar belakang menjadi hitam */
     color: #fff;
-    padding: 20px;
+    padding: 40px; /* Meningkatkan padding untuk memberikan kesan lebih tebal */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 240px; /* Tinggi footer menjadi 2x lipat */
+    width: 100%; /* Memastikan footer memenuhi lebar */
 }
 
-.footer-title {
-    font-size: 18px;
+.footer-left {
+    display: flex;
+    flex-direction: column; /* Menyusun teks secara vertikal */
+}
+
+.footer-text {
+    margin: 0; /* Menghapus margin default */
+    font-size: 40px; /* Ukuran font lebih besar */
+}
+
+.second-row {
+    display: flex;
+    align-items: center; /* Menyusun gambar dan teks secara horizontal */
+}
+
+.hero-img-container {
+    background-color: #fff; /* Latar belakang putih untuk gambar */
+    border-radius: 50%; /* Membuat sudut menjadi lingkaran */
+    padding: 5px; /* Memberikan padding untuk efek jarak */
+    margin-right: 10px; /* Jarak antara gambar dan teks */
+    width: 90px; /* Lebar kontainer gambar, tetap sama */
+    height: 90px; /* Tinggi kontainer gambar, tetap sama */
+    display: flex; /* Menjaga gambar tetap terpusat */
+    justify-content: center; /* Memusatkan gambar di tengah */
+    align-items: center; /* Memusatkan gambar di tengah */
+}
+
+.hero-img {
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    width: 100%; /* Mengisi lebar kontainer */
+    height: auto; /* Menjaga rasio aspek */
+    object-fit: cover;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column; /* Menyusun konten secara vertikal */
+    align-items: flex-end; /* Menyusun ke kanan */
+}
+
+.contact-box {
+    background-color: #fff; /* Kotak putih */
+    border-radius: 15px; /* Sudut oval */
+    padding: 10px 20px; /* Padding dalam kotak */
+    margin-bottom: 10px; /* Jarak antara kotak dan sosial media */
+}
+
+.contact-text {
+    color: #000; /* Warna teks hitam */
+    margin: 0; /* Menghapus margin default */
+    font-size: 20px;
 }
 
 .social-media {
     display: flex;
+    font-size:20px;
 }
 
 .social-icon {
-    margin-left: 15px;
-    color: #fff;
-    text-decoration: none;
+    margin-left: 15px; /* Jarak antar ikon */
+    color: #fff; /* Warna putih untuk ikon */
+    text-decoration: none; /* Menghapus garis bawah */
 }
 
 .social-icon:hover {
-    color: #007bff;
+    color: #007bff; /* Warna saat hover */
 }
