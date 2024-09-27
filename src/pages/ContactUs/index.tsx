@@ -1,13 +1,14 @@
-import React from 'react';
+// contactus index.tsx
+import { FC } from "react";
 import Header from '../../components/Header';
 import './styles.css';
 
-const ContactUs = () => {
+const ContactUs: FC = () => { // Ensure the name matches your import in app.tsx
   return (
     <div className="contact-us">
       <Header />
       <div className="contact-details">
-        <img src={require('../../assets/Ayushphoto.svg')} alt="Ayush" className="profile-photo" />
+        <img src={require('../../assets/hero-img.png')} alt="Ayush" className="profile-photo" />
         <div className="details">
           <h3>Contact details:</h3>
           <p>ayush.barnwal@brightscout.com</p>
@@ -40,4 +41,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default ContactUs; // Ensure the export name matches the import in app.tsx

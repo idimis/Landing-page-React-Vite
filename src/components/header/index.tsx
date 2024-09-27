@@ -1,6 +1,9 @@
 import { FC } from "react";
 import './styles.css';
 
+
+
+
 const Index: FC = () => {
   return (
     <header className="nav-container">
@@ -17,5 +20,6 @@ const Index: FC = () => {
     </header>
   );
 }
+
 
 export default Index;

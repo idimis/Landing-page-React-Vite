@@ -1,34 +1,69 @@
 /* Portfolio/styles.css */
 
 .portfolio-section {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 0;
+    max-width: 1200px;         /* Set maximum width */
+    margin: 0 auto;            /* Center the section */
+    margin-top: 30px;          /* Space above the section */
+    margin-bottom: 30px;       /* Space below the section */
+    margin-left: 50px;            /* Left margin for spacing */
+    margin-right: 400px;        /* Right margin */
+    display: flex;             /* Use flexbox for section layout */
+}
+
+.portfolio-header {
+    flex-basis: 100%;           /* Adjust width for title */
+    padding-left: 5px;
 }
 
 .portfolio-title {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-family: 'Neue Montreal'; /* Match font family */
+    font-size: 40px;           /* Portfolio title font size */
+    font-weight: 500;  
+    margin-left: 0;
+    color: #0B0C0E;            /* Title color */
+    text-align: left;
+}
+
+.work-list {
+    flex-basis: 70%;           /* Adjust width for works */
+    display: flex;             /* Use flexbox for work list layout */
+    flex-direction: column;    /* Stack works vertically */
 }
 
 .portfolio-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    display: flex;             /* Use flexbox for item layout */
+    justify-content: space-between; /* Space between title and details */
+    align-items: center;       /* Center items vertically */
+    margin-bottom: 20px;       /* Space between items */
 }
 
 .portfolio-description {
-    flex: 1;
-    font-size: 16px;
+    flex: 1;                   /* Allow description to take remaining space */
+}
+
+.company-name {
+    font-family: 'Neue Montreal'; /* Match font family */
+    font-size: 60px;           /* Company name font size */
+    font-weight: 500;          /* Company name font weight */
+    color: #0B0C0E;            /* Company name color */
+    margin: 0;                 /* Reset margin */
+}
+
+.work-description {
+    font-family: 'Neue Montreal'; /* Match font family */
+    font-size: 24px;           /* Description font size */
+    font-weight: 400;          /* Description font weight */
+    line-height: 140%;         /* Line height for readability */
+    color: #3C3D3E;            /* Description color */
+    margin-top: 5px;           /* Space between company and description */
 }
 
 .round-button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+    border: none;              /* No border for button */
+    background-color: transparent; /* Transparent background */
+    cursor: pointer;           /* Pointer cursor on hover */
 }
 
 .round-button:focus {
-    outline: none;
+    outline: none;             /* No outline when focused */
 }

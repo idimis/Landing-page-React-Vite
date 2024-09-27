@@ -1,0 +1,26 @@
+.overlay-menu {
+    position: absolute;
+    top: 20px; /* Adjust this value as needed */
+    right: 20px; /* Adjust this value as needed */
+    color: white;
+    display: flex;
+    gap: 12px; /* Adjusted gap */
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 10px 16px; /* Adjusted padding */
+    border-radius: 50px; /* Make it more rounded */
+    transition: transform 0.3s ease;
+}
+
+.overlay-menu:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.overlay-menu:nth-child(1) {
+    font-size: 56px;
+}
+
+.overlay-menu:nth-child(2) {
+    font-size: 40px;
+}

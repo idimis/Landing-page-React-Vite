@@ -1,27 +1,79 @@
-/* Testimonials/styles.css */
-
-.testimonials-section {
+.testimonials {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding:20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
-    flex-direction: column;
-    padding: 40px 0;
-}
 
-.testimonial-item {
+    
+  }
+  
+  .testimonials-header {
+    flex-basis: 30%; /* Title on the left side */
+  }
+  
+  .testimonials-title {
+    flex-basis: 30%;
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #0B0C0E;
+  }
+  
+  .testimonials-container {
+    flex-basis: 70%; 
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-.testimonial-text {
-    margin-left: 15px;
-}
-
-.testimonial-name {
+    flex-direction: column; 
+    gap: 20px; 
+    
+  }
+  
+  .testimonial {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex; 
+    flex-direction: column; 
+  }
+  
+  .testimonial-text {
+    font-family: 'Neue Montreal';
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .testimonial-profile {
+    display: flex; /* Align photo and details in a row */
+    align-items: center; /* Center vertically */
+    color: black;
+  }
+  
+  .testimonialsphoto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make the photo round */
+    margin-right: 15px; /* Space between photo and text */
+  }
+  
+  .testimonial-details {
+    display: flex;
+    flex-direction: column; /* Stack name and position vertically */
+  }
+  
+  .contributor-name {
     font-weight: bold;
-    margin-top: 5px;
-}
-
-.testimonial-position {
+    margin: 0;
+  }
+  
+  .contributor-position {
     font-size: 14px;
-    color: #666;
-}
+    color: #555;
+    margin: 0;
+  }
+  

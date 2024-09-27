@@ -1,23 +1,27 @@
 .nav-container {
-    position: absolute;
+    position: fixed; /* Change from absolute to fixed for steady position */
     top: 0;
-    left: 0;
-    width: calc(100% - 160px);
-    padding: 26px 80px;
+    left: 50%; /* Centering the header */
+    transform: translateX(-50%); /* Adjust for centering */
+    width: calc(100% - 160px); /* Keep this for padding */
+    max-width: 1200px; /* Limit the max width */
+    padding: 26px 80px; /* Padding for top/bottom and left/right */
+    box-sizing: border-box; /* Include padding in width calculations */
     z-index: 2;
+  
 }
 
 .nav-container nav {
     display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    font-style: normal;
+    justify-content: space-between; /* Space out nav items */
+    font-size: 25px;
     font-weight: 400;
+    width: 100%; /* Ensure nav takes full width of container */
 }
 
 .nav-list {
     display: flex;
-    gap: 40px;
+    gap: 40px; /* Space between links */
 }
 
 .nav-list a {
