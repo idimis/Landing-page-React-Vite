@@ -1,67 +1,35 @@
-/* Footer/styles.css */
-
-.footer {
-    background-color: #000; /* Ubah warna latar belakang menjadi hitam */
-    color: #fff;
-    padding: 40px; /* Meningkatkan padding untuk memberikan kesan lebih tebal */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 240px; /* Tinggi footer menjadi 2x lipat */
-    width: 100%; /* Memastikan footer memenuhi lebar */
-}
-
-.footer-left {
-    display: flex;
-    flex-direction: column; /* Menyusun teks secara vertikal */
-}
-
-.footer-text {
-    margin: 0; /* Menghapus margin default */
-    font-size: 40px; /* Ukuran font lebih besar */
-}
-
-.second-row {
-    display: flex;
-    align-items: center; /* Menyusun gambar dan teks secara horizontal */
-}
-
 .hero-img-container {
-    background-color: #fff; /* Latar belakang putih untuk gambar */
-    border-radius: 50%; /* Membuat sudut menjadi lingkaran */
-    padding: 5px; /* Memberikan padding untuk efek jarak */
-    margin-right: 10px; /* Jarak antara gambar dan teks */
-    width: 90px; /* Lebar kontainer gambar, tetap sama */
-    height: 90px; /* Tinggi kontainer gambar, tetap sama */
-    display: flex; /* Menjaga gambar tetap terpusat */
-    justify-content: center; /* Memusatkan gambar di tengah */
-    align-items: center; /* Memusatkan gambar di tengah */
+    background-color: #fff; 
+    border-radius: 50%; 
+    padding: 5px; 
+    margin-right: 10px; 
+    width: 90px; 
+    height: 90px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 .hero-img {
-    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
-    width: 100%; /* Mengisi lebar kontainer */
-    height: auto; /* Menjaga rasio aspek */
+    border-radius: 50%; 
+    width: 100%; 
+    height: auto; 
     object-fit: cover;
 }
 
-.footer-right {
-    display: flex;
-    flex-direction: column; /* Menyusun konten secara vertikal */
-    align-items: flex-end; /* Menyusun ke kanan */
-}
 
 .contact-box {
-    background-color: #fff; /* Kotak putih */
-    border-radius: 15px; /* Sudut oval */
-    padding: 10px 20px; /* Padding dalam kotak */
-    margin-bottom: 10px; /* Jarak antara kotak dan sosial media */
+    background-color: #fff; 
+    border-radius: 15px; 
+    padding: 10px 20px; 
+    margin-bottom: 10px; 
 }
 
 .contact-text {
-    color: #000; /* Warna teks hitam */
-    margin: 0; /* Menghapus margin default */
+    color: #000; 
+    margin: 0; 
     font-size: 20px;
+
 }
 
 .social-media {
@@ -70,11 +38,44 @@
 }
 
 .social-icon {
-    margin-left: 15px; /* Jarak antar ikon */
-    color: #fff; /* Warna putih untuk ikon */
-    text-decoration: none; /* Menghapus garis bawah */
+    margin-left: 15px; 
+    color: #fff; 
+    text-decoration: none; 
 }
 
 .social-icon:hover {
-    color: #007bff; /* Warna saat hover */
+    color: #007bff;
+}
+
+
+.footer {
+    background-color: #000; 
+    color: #fff;
+    padding: 40px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 240px; 
+    width: 100%; 
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column; 
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+}
+
+.footer-text {
+    margin: 0; 
+    font-size: 40px; 
+}
+
+.second-row {
+    display: flex;
+    align-items: center; 
 }

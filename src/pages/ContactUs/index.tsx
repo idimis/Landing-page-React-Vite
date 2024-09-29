@@ -3,7 +3,7 @@ import Header from '../../components/Header';
 import './styles.css';
 import heroImg from '../../assets/hero-img.png'; 
 
-const Index: FC = () => { // Ensure the name matches your import in app.tsx
+const Index: FC = () => { 
   console.log("ContactUs component rendered");
   return (
     <div className="contact-us">
@@ -15,7 +15,7 @@ const Index: FC = () => { // Ensure the name matches your import in app.tsx
           </div>
           <div className="contact-info">
             <h3>Contact details:</h3>
-            <p>ayush.barnwal@brightscout.com</p>
+            <p>adimas.barnwal@brightscout.com</p>
             <p>+918651447521</p>
             <h3>Social:</h3>
             <p>LinkedIn</p>
@@ -28,11 +28,11 @@ const Index: FC = () => { // Ensure the name matches your import in app.tsx
           <h2>Let's build something cool together</h2>
           <div className="form-group">
             <label>Name</label>
-            <input type="text" placeholder="James Robert" />
+            <input type="text" placeholder="Adimas Barnwal" />
           </div>
           <div className="form-group">
             <label>Email</label>
-            <input type="email" placeholder="ayush.barnwal@brightscout.com" />
+            <input type="email" placeholder="adimas.barnwal@brightscout.com" />
           </div>
           <div className="form-group">
             <label>Subject</label>
@@ -40,7 +40,7 @@ const Index: FC = () => { // Ensure the name matches your import in app.tsx
           </div>
           <div className="form-group">
             <label>Message</label>
-            <textarea placeholder="Type your Message"></textarea>
+            <input type="text" placeholder="Type your Message" />
           </div>
           <button className="submit-button">Submit</button>
         </div>
@@ -50,7 +50,12 @@ const Index: FC = () => { // Ensure the name matches your import in app.tsx
           <p>Build with 💖 by Brightscout & Ayush</p>
         </div>
         <div className="footer-right">
-          <p>LinkedIn, Instagram, Twitter, Webflow</p>
+          <div className="social-media">
+          <a href="#" className="social-icon">LinkedIn</a>
+            <a href="#" className="social-icon">Instagram</a>
+            <a href="#" className="social-icon">Twitter</a>
+            <a href="#" className="social-icon">Webflow</a>
+        </div>
         </div>
       </footer>
     </div>

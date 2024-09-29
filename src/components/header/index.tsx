@@ -6,13 +6,15 @@ const Index: FC = () => {
   return (
     <header className="nav-container">
       <nav>
-        <div>
-          @Adimas Barnwal
-        </div>
+        <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
+          <div>
+            @Adimas Barnwal
+          </div>
+        </Link>
         <div className="nav-list">
-          <Link to="/about">About</Link> {/* Use Link for navigation */}
-          <a href="#work">Work</a>
-          <Link to="/contact-us">Contact</Link> {/* Update this to Link */}
+          <Link to="/about">About</Link> 
+          <Link to="/work">Work</Link>
+          <Link to="/contact-us">Contact</Link> 
         </div>
       </nav>
     </header>

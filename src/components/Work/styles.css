@@ -1,0 +1,113 @@
+/* Portfolio/styles.css */
+
+.portfolio-section {
+    max-width: 1200px;         
+    margin: 0 auto;            
+    margin-top: 30px;          
+    margin-bottom: 30px;       
+    margin-left: 50px;         
+    margin-right: 400px;       
+    display: flex;             
+}
+
+.portfolio-header {
+    flex-basis: 100%;           
+    padding-left: 5px;
+}
+
+.portfolio-title {
+    font-family: 'Neue Montreal'; 
+    font-size: 40px;           
+    font-weight: 500;  
+    margin-left: 0;
+    color: #0B0C0E;            
+    text-align: left;
+}
+
+.work-list {
+    flex-basis: 70%;           
+    display: flex;             
+    flex-direction: column;    
+}
+
+.portfolio-item {
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;       
+    margin-bottom: 20px;       
+}
+
+.portfolio-info {
+    flex: 1;                   /* Allow info to take remaining space */
+    display: flex;             /* Use flexbox for info layout */
+    flex-direction: column;    /* Stack title and description */
+    margin-right:30px;
+}
+
+.company-name {
+    font-family: 'Neue Montreal'; 
+    font-size: 60px;           
+    font-weight: 500;          
+    color: #0B0C0E;            
+    margin: 0;                 
+}
+
+.work-description {
+    font-family: 'Neue Montreal'; 
+    font-size: 24px;           
+    font-weight: 400;          
+    line-height: 140%;         
+    color: #3C3D3E;            
+    margin-top: 5px;           
+}
+
+.arrow-button-container {
+    display: flex;                /* Center the arrow */
+    justify-content: flex-end;    /* Align right */
+    margin-left: auto;            /* Push arrow button to the right */
+}
+
+.round-button {
+    width: 48px;                  /* Lebar button diperbesar */
+    height: 48px;                 /* Tinggi button diperbesar */
+    border: 3px solid black;      /* Outline button yang lebih tebal */
+    border-radius: 50%;           /* Tetap membuatnya bulat */
+    display: flex;                /* Center panah */
+    align-items: center;          /* Center secara vertikal */
+    justify-content: center;      /* Center secara horizontal */
+    background-color: transparent; /* Latar belakang transparan */
+    cursor: pointer;              /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.arrow {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent; /* Ubah lebar segitiga kiri */
+    border-right: 20px solid transparent; /* Ubah lebar segitiga kanan */
+    border-bottom: 40px solid black;      /* Ubah tinggi segitiga untuk panah */
+    transform: rotate(45deg);             /* Rotasi untuk mengarah ke kanan */
+    transition: border-bottom-color 0.3s; /* Transisi untuk perubahan warna */
+}
+
+
+.round-button:hover {
+    background-color: black;          /* Change background on hover */
+}
+
+.round-button:hover .arrow {
+    border-bottom-color: white;       /* Change arrow color on hover */
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+    .portfolio-title {
+        font-size: 32px; /* Adjust title size for mobile */
+    }
+    .company-name {
+        font-size: 40px; /* Adjust company name size for mobile */
+    }
+    .work-description {
+        font-size: 20px; /* Adjust description size for mobile */
+    }
+}

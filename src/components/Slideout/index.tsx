@@ -12,6 +12,9 @@ const Slideout: FC<SlideoutProps> = ({ isOpen, closeMenu }) => {
     <>
       {isOpen && <div className="menu-overlay" onClick={closeMenu}></div>}
       <div className={`slide-out ${isOpen ? 'open' : ''}`}>
+        <button className={`menu-toggle ${isOpen ? 'open' : ''}`} onClick={closeMenu}>
+          {isOpen ? '✖' : '≡'} {/* Simbol untuk menu open dan close */}
+        </button>
         <ul className="main-menu">
           <li><Link to="/" onClick={closeMenu}>Home</Link></li> {/* Use Link for navigation */}
           <li><Link to="/about" onClick={closeMenu}>About</Link></li>

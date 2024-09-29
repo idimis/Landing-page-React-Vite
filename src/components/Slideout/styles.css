@@ -77,3 +77,29 @@
 .menu-overlay.open {
     display: block;
 }
+
+.menu-toggle {
+    position: absolute; /* Menggunakan posisi absolute */
+    top: 40px; /* Jarak dari atas */
+    right: 20px; /* Jarak dari kanan */
+    width: 50px; /* Lebar tombol */
+    height: 50px; /* Tinggi tombol */
+    border: none; /* Tanpa border */
+    border-radius: 50%; /* Membuatnya bulat */
+    background-color: transparent; /* Latar belakang transparan */
+    color: white; /* Warna teks putih */
+    font-size: 30px; /* Ukuran font */
+    cursor: pointer; /* Menunjukkan pointer saat hover */
+    z-index: 1001; /* Pastikan tombol di atas semua elemen lain */
+    transition: background-color 0.3s, color 0.3s; /* Transisi untuk warna */
+}
+
+.menu-toggle.open {
+    background-color: white; /* Warna latar belakang saat terbuka */
+    color: black; /* Warna teks hitam saat terbuka */
+}
+
+.menu-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Warna latar belakang saat hover */
+}
+

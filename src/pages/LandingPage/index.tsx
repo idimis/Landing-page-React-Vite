@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Overlay from '../../components/Overlay';
-import Portfolio from '../../components/Portfolio';
+import Work from '../../components/Work';
 import Footer from '../../components/Footer';
 import About from '../../components/About';
 import Workrow from '../../components/Workrow';
@@ -20,11 +20,14 @@ const LandingPage = () => {
       <Hero />
       <Overlay />
       <About />
-      <Portfolio />
+      <Work />
       <Workrow />
       <Testimonials />
+      <Link to="/work"/>
+      <Link to="/about">
       <Link to="/contact-us"> {/* Add this link to navigate to Contact Us */}
         <button className="contact-button">Contact Us</button>
+      </Link>
       </Link>
       <Footer />
     </div>
