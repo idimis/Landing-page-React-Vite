@@ -27,7 +27,7 @@ const WorkRow: React.FC = () => {
         <section className="workrow-section">
             <div className="workrow-container">
                 <div className="workrow motion-left">
-                    {/* Render images twice for seamless scrolling */}
+                    
                     {shuffledImages.concat(shuffledImages).map((img, index) => (
                         <div key={index} className="workrow-item">
                             <img src={img} alt={`Work ${index + 1}`} />
@@ -35,7 +35,7 @@ const WorkRow: React.FC = () => {
                     ))}
                 </div>
                 <div className="workrow motion-right">
-                    {/* Render images twice for seamless scrolling */}
+                    
                     {shuffledImages.concat(shuffledImages).map((img, index) => (
                         <div key={index} className="workrow-item">
                             <img src={img} alt={`Work ${index + 1}`} />

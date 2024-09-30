@@ -15,7 +15,7 @@ function App() {
       <Route path="/" element={<LandingPage />} />
       <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/work" element={<Work />} />
-      <Route path="/about" element={<About />} /> {/* Adjusted to use About component */}
+      <Route path="/about" element={<About />} /> 
     </Routes>
   );
 }

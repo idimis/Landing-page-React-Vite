@@ -1,54 +1,54 @@
 * {
-  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  box-sizing: border-box; 
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: Arial, sans-serif; /* Use a clean font */
-  line-height: 1.6; /* Improve readability */
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  font-family: Arial, sans-serif; 
+  line-height: 1.6; 
+  overflow-x: hidden; 
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 1200px; /* Set a maximum width for large screens */
-  margin: 0 auto; /* Center the container */
-  padding: 20px; /* Add some padding */
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 20px; 
 }
 
 .header, .footer {
-  background-color: #f8f8f8; /* Light background for header and footer */
-  padding: 20px; /* Padding inside header and footer */
-  text-align: center; /* Center the text */
+  background-color: #f8f8f8; 
+  padding: 20px; 
+  text-align: center; 
 }
 
 .section {
-  margin-bottom: 20px; /* Space between sections */
+  margin-bottom: 20px; 
 }
 
 .testimonials {
   display: flex;
-  flex-direction: column; /* Stack testimonials vertically */
-  gap: 15px; /* Space between testimonials */
+  flex-direction: column; 
+  gap: 15px; 
 }
 
 .testimonial {
-  background: #ffffff; /* White background for testimonials */
-  padding: 15px; /* Padding inside testimonial */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  background: #ffffff; 
+  padding: 15px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 @media (min-width: 768px) {
   .testimonials {
-    flex-direction: row; /* Change to row layout on larger screens */
-    justify-content: space-between; /* Space out testimonials */
+    flex-direction: row; 
+    justify-content: space-between; 
   }
 
   .testimonial {
-    flex: 1; /* Allow testimonials to grow equally */
-    margin: 0 10px; /* Add side margins */
+    flex: 1; 
+    margin: 0 10px; 
   }
 }

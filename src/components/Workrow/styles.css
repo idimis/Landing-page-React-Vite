@@ -1,56 +1,56 @@
 .workrow-section {
     position: relative;
-    padding: 40px 0; /* Sesuaikan padding sesuai kebutuhan */
+    padding: 40px 0; 
 }
 
 .workrow-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden; /* Menyembunyikan bagian yang tidak terlihat */
+    overflow: hidden; 
 }
 
 .workrow {
     display: flex;
-    width: 200%; /* Meningkatkan lebar untuk menampung dua set gambar */
-    animation: move-left 40s linear infinite;  /* Durasi animasi untuk baris atas */
+    width: 200%; 
+    animation: move-left 40s linear infinite;  
 }
 
 .workrow-item {
-    flex: 0 0 auto; /* Agar gambar tidak mengecil */
-    margin: 20px 10px; /* Jarak antar item (20px atas dan bawah) */
-    border-radius: 8px; /* Border radius */
-    border: 20px solid #aaa; /* Frame warna abu-abu */
+    flex: 0 0 auto; 
+    margin: 20px 10px; 
+    border-radius: 8px; 
+    border: 20px solid #aaa; 
     height: 200px; 
     width: 400px; 
 }  
 
 .workrow-item img {
     display: block;
-    width: 100%; /* Ukuran gambar */
-    height: 100%; /* Sesuaikan tinggi untuk mengisi frame */
-    object-fit: cover; /* Memastikan gambar terisi dengan baik */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
 
-/* Animasi untuk baris atas */
+
 @keyframes move-left {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* Ubah menjadi -50% untuk menampilkan setengah dari kontainer */
+    100% { transform: translateX(-50%); } 
 }
 
-/* Animasi untuk baris bawah (berlawanan arah) */
+
 .workrow.motion-right {
     display: flex;
-    width: 200%; /* Meningkatkan lebar untuk menampung dua set gambar */
-    animation: move-right 40s linear infinite; /* Durasi animasi untuk baris bawah */
+    width: 200%; 
+    animation: move-right 40s linear infinite; 
 }
 
 @keyframes move-right {
     0% { transform: translateX(0); }
-    100% { transform: translateX(50%); } /* Ubah menjadi 50% untuk menampilkan setengah dari kontainer */
+    100% { transform: translateX(50%); } 
 }
 
-/* Jarak antara baris */
+
 .workrow-container {
-    margin-bottom: 40px; /* Jarak antara baris atas dan bawah */
+    margin-bottom: 40px; 
 }

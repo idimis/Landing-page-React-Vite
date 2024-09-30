@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 import './styles.css';
 import heroImg from '../../assets/hero-img.png'; 
 
@@ -16,7 +17,7 @@ const Footer = () => {
       </div>
       <div className="footer-right">
         <div className="contact-box">
-          <p className="contact-text">Get in touch</p>
+          <Link to="/contact-us" className="contact-text">Get in touch</Link> 
         </div>
         <div className="social-media">
           <a href="#" className="social-icon">LinkedIn</a>

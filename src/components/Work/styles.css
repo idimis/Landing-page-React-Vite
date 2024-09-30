@@ -62,52 +62,52 @@
 }
 
 .arrow-button-container {
-    display: flex;                /* Center the arrow */
-    justify-content: flex-end;    /* Align right */
-    margin-left: auto;            /* Push arrow button to the right */
+    display: flex;                
+    justify-content: flex-end;   
+    margin-left: auto;            
 }
 
 .round-button {
-    width: 48px;                  /* Lebar button diperbesar */
-    height: 48px;                 /* Tinggi button diperbesar */
-    border: 3px solid black;      /* Outline button yang lebih tebal */
-    border-radius: 50%;           /* Tetap membuatnya bulat */
-    display: flex;                /* Center panah */
-    align-items: center;          /* Center secara vertikal */
-    justify-content: center;      /* Center secara horizontal */
-    background-color: transparent; /* Latar belakang transparan */
-    cursor: pointer;              /* Pointer cursor on hover */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    width: 48px;                  
+    height: 48px;                 
+    border: 3px solid black;      
+    border-radius: 50%;           
+    display: flex;               
+    align-items: center;          
+    justify-content: center;      
+    background-color: transparent; 
+    cursor: pointer;              
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 .arrow {
     width: 0; 
     height: 0; 
-    border-left: 20px solid transparent; /* Ubah lebar segitiga kiri */
-    border-right: 20px solid transparent; /* Ubah lebar segitiga kanan */
-    border-bottom: 40px solid black;      /* Ubah tinggi segitiga untuk panah */
-    transform: rotate(45deg);             /* Rotasi untuk mengarah ke kanan */
-    transition: border-bottom-color 0.3s; /* Transisi untuk perubahan warna */
+    border-left: 20px solid transparent; 
+    border-right: 20px solid transparent; 
+    border-bottom: 40px solid black;      
+    transform: rotate(45deg);             
+    transition: border-bottom-color 0.3s; 
 }
 
 
 .round-button:hover {
-    background-color: black;          /* Change background on hover */
+    background-color: black;         
 }
 
 .round-button:hover .arrow {
-    border-bottom-color: white;       /* Change arrow color on hover */
+    border-bottom-color: white;      
 }
 
-/* Responsive adjustments if needed */
+
 @media (max-width: 768px) {
     .portfolio-title {
-        font-size: 32px; /* Adjust title size for mobile */
+        font-size: 32px; 
     }
     .company-name {
-        font-size: 40px; /* Adjust company name size for mobile */
+        font-size: 40px; 
     }
     .work-description {
-        font-size: 20px; /* Adjust description size for mobile */
+        font-size: 20px; 
     }
 }

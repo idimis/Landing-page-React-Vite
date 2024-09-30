@@ -1,16 +1,16 @@
 .hero {
     display: flex;
-    flex-direction: column; /* or row depending on your design */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
   }
   
   .hero-image {
-    width: 100%; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 600px; /* Limit max width */
-    display: block; /* Centers the image if needed */
-    margin: 0 auto; /* Center the image horizontally */
+    width: 100%; 
+    height: auto; 
+    max-width: 600px; 
+    display: block;
+    margin: 0 auto; 
   }
   
   .running-text {

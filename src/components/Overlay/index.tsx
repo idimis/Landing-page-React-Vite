@@ -23,7 +23,7 @@ const Overlay: FC = () => {
         <span>👋</span>
         <span>Hi I’m Adimas</span>
       </div>
-      {isMenuOpen && <div className="menu-overlay open" onClick={toggleMenu}></div>} {/* Dark overlay */}
+      {isMenuOpen && <div className="menu-overlay open" onClick={toggleMenu}></div>} 
       <Slideout isOpen={isMenuOpen} closeMenu={toggleMenu} />
     </>
   );
