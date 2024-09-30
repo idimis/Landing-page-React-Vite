@@ -8,6 +8,7 @@ import Footer from '../../components/Footer';
 import About from '../../components/About';
 import Workrow from '../../components/Workrow';
 import Testimonials from '../../components/Testimonials';
+import Burger from '../../components/Burger';
 import { Link } from 'react-router-dom'; 
 
 
@@ -20,12 +21,13 @@ const LandingPage = () => {
       <Hero />
       <Overlay />
       <About />
+      <Burger />
       <Work />
       <Workrow />
       <Testimonials />
       <Link to="/work"/>
       <Link to="/about">
-      <Link to="/contact-us"> {/* Add this link to navigate to Contact Us */}
+      <Link to="/contact-us"> 
         <button className="contact-button">Contact Us</button>
       </Link>
       </Link>

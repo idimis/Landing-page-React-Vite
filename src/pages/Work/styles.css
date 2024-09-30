@@ -62,51 +62,51 @@
 }
 
 .arrow-button-container {
-    display: flex;                /* Center the arrow */
-    justify-content: flex-end;    /* Align right */
-    margin-left: auto;            /* Push arrow button to the right */
+    display: flex;                
+    justify-content: flex-end;    
+    margin-left: auto;            
 }
 
 .round-button {
-    width: 32px;                  /* Width of the button */
-    height: 32px;                 /* Height of the button */
-    border: 2px solid black;      /* Outline */
-    border-radius: 50%;           /* Make it circular */
-    display: flex;                /* Center the arrow */
-    align-items: center;          /* Center vertically */
-    justify-content: center;      /* Center horizontally */
-    background-color: transparent; /* Transparent background */
-    cursor: pointer;              /* Pointer cursor on hover */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    width: 32px;                  
+    height: 32px;                 
+    border: 2px solid black;      
+    border-radius: 50%;           
+    display: flex;                
+    align-items: center;          
+    justify-content: center;      
+    background-color: transparent; 
+    cursor: pointer;              
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .arrow {
     width: 0; 
     height: 0; 
-    border-left: 8px solid transparent; /* Left triangle */
-    border-right: 8px solid transparent; /* Right triangle */
-    border-bottom: 16px solid black;     /* Bottom triangle for arrow */
-    transform: rotate(45deg);            /* Rotate to point right */
-    transition: border-bottom-color 0.3s; /* Transition for color change */
+    border-left: 8px solid transparent; 
+    border-right: 8px solid transparent; 
+    border-bottom: 16px solid black;     
+    transform: rotate(45deg);            
+    transition: border-bottom-color 0.3s; 
 }
 
 .round-button:hover {
-    background-color: black;          /* Change background on hover */
+    background-color: black;          
 }
 
 .round-button:hover .arrow {
-    border-bottom-color: white;       /* Change arrow color on hover */
+    border-bottom-color: white;       
 }
 
-/* Responsive adjustments if needed */
+
 @media (max-width: 768px) {
     .portfolio-title {
-        font-size: 32px; /* Adjust title size for mobile */
+        font-size: 32px; 
     }
     .company-name {
-        font-size: 40px; /* Adjust company name size for mobile */
+        font-size: 40px; 
     }
     .work-description {
-        font-size: 20px; /* Adjust description size for mobile */
+        font-size: 20px; 
     }
 }

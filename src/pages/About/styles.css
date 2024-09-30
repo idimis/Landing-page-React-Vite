@@ -5,10 +5,10 @@
     box-sizing: border-box; 
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 100px; /* Add left margin */
-    margin-right: 20px; /* Add right margin */
+    margin-left: 100px; 
+    margin-right: 20px; 
     display: flex;    
-    align-items: flex-start; /* Align items to the start */
+    align-items: flex-start; 
 }
 
 .about .about-left {
@@ -30,5 +30,5 @@
     line-height: 140%;
     text-align: justify;
     color: #3C3D3E;
-    margin-top: 20px; /* Add margin to push text down */
+    margin-top: 20px; 
 }

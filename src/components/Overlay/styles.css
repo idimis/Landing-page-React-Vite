@@ -1,6 +1,6 @@
 .overlay-menu {
-    position: absolute;
-    top: 70px; 
+    position: fixed; 
+    top: 50%; 
     right: 30px; 
     color: white;
     display: flex;
@@ -11,10 +11,11 @@
     padding: 20px 32px; 
     border-radius: 50px; 
     transition: transform 0.3s ease;
-}
+    transform: translateY(-50%); 
 
+}
 .overlay-menu:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1) translateY(-50%); 
 }
 
 .overlay-menu:nth-child(1) {
