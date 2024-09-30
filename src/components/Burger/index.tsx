@@ -1,32 +1,22 @@
 import { FC, useState } from "react";
-import Slideout from "../Slideout"; 
+import Slideout from "../Slideout"; // Pastikan path ini sesuai dengan struktur folder Anda
 import './styles.css';
 
-const Overlay: FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const BurgerButton: FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsOpen(!isOpen);
   };
 
   return (
     <>
-      <div 
-        className="overlay-menu" 
-        onMouseEnter={toggleMenu} 
-        onMouseLeave={toggleMenu} 
-        onClick={toggleMenu} 
-        role="button" 
-        tabIndex={0} 
-      >
-        <span>👋</span>
-        {isMenuOpen && <span> Hi I'm Adimas</span>} 
-      </div>
-      
-     
-      <Slideout isOpen={isMenuOpen} closeMenu={toggleMenu} />
+      <button className={`burger-button ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <span className="burger-icon">=</span> {/* Simbol burger */}
+      </button>
+      <Slideout isOpen={isOpen} closeMenu={toggleMenu} />
     </>
   );
 };
 
-export default Overlay;
+export default BurgerButton;
