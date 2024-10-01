@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-import Slideout from "../Slideout"; // Pastikan path ini sesuai dengan struktur folder Anda
+import Slideout from "../Slideout"; 
 import './styles.css';
 
 const BurgerButton: FC = () => {
@@ -12,7 +12,7 @@ const BurgerButton: FC = () => {
   return (
     <>
       <button className={`burger-button ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <span className="burger-icon">=</span> {/* Simbol burger */}
+        <span className="burger-icon">=</span> 
       </button>
       <Slideout isOpen={isOpen} closeMenu={toggleMenu} />
     </>
