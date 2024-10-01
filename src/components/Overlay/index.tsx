@@ -4,6 +4,7 @@ import './styles.css';
 
 const Overlay: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -19,9 +20,14 @@ const Overlay: FC = () => {
 
   return (
     <>
-      <div className="overlay-menu" onMouseEnter={toggleMenu} onMouseLeave={toggleMenu}>
-        <span>👋</span>
-        <span>Hi I’m Adimas</span>
+      <div
+        className={`overlay-menu ${isHovered ? "hovered" : ""}`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        onClick={toggleMenu}
+      >
+        <span className="emoji">👋</span>
+        {isHovered && <span className="text">Hi I’m Adimas</span>}
       </div>
       {isMenuOpen && <div className="menu-overlay open" onClick={toggleMenu}></div>} 
       <Slideout isOpen={isMenuOpen} closeMenu={toggleMenu} />
